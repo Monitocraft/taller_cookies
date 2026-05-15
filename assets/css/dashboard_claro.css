@@ -1,0 +1,42 @@
+/* =============================================
+   assets/css/dashboard_claro.css
+   Tema: Blanco hueso + Azul acero — CLARO
+   ============================================= */
+
+:root {
+    --bone:        #F5F2ED;
+    --bone-dark:   #EAE6DF;
+    --steel:       #4A7FA5;
+    --steel-light: #6398BB;
+    --steel-dark:  #2E5F82;
+    --ink:         #2C3040;
+    --ink-muted:   #6B7280;
+
+    /* Tokens de tema */
+    --bg:           #F5F2ED;
+    --sidebar-bg:   #FFFFFF;
+    --card-bg:      #FFFFFF;
+    --border-color: #E4E0DA;
+    --shadow-color: rgba(44,48,64,.08);
+    --icon-bg:      #EEF4F9;
+    --text:         #2C3040;
+    --text-muted:   #6B7280;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.sidebar { background: var(--sidebar-bg); border-right: 1px solid var(--border-color); }
+.brand-name { color: var(--ink); }
+.brand-icon { color: var(--steel); }
+
+.nav-item { color: var(--ink-muted); }
+.nav-item:hover { background: var(--bone); color: var(--steel); }
+.nav-item.active { background: var(--bone); color: var(--steel); font-weight: 700; }
+
+.btn-logout { color: #C0392B; }
+.btn-logout:hover { background: rgba(192,57,43,.08); }
+
+.main-content { background: var(--bg); }

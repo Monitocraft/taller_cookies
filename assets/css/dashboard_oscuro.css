@@ -1,0 +1,48 @@
+/* =============================================
+   assets/css/dashboard_oscuro.css
+   Tema: Azul acero oscuro — DARK
+   ============================================= */
+
+:root {
+    --bone:        #F5F2ED;
+    --bone-dark:   #EAE6DF;
+    --steel:       #6398BB;
+    --steel-light: #80AFCF;
+    --steel-dark:  #4A7FA5;
+    --ink:         #E8E4DE;
+    --ink-muted:   #9CA3AF;
+
+    /* Tokens de tema */
+    --bg:           #1A1E28;
+    --sidebar-bg:   #141720;
+    --card-bg:      #1F2433;
+    --border-color: #2C3248;
+    --shadow-color: rgba(0,0,0,.25);
+    --icon-bg:      #253044;
+    --text:         #E8E4DE;
+    --text-muted:   #9CA3AF;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.sidebar { background: var(--sidebar-bg); border-right: 1px solid var(--border-color); }
+.brand-name { color: var(--text); }
+.brand-icon { color: var(--steel); }
+
+.nav-item { color: var(--text-muted); }
+.nav-item:hover { background: rgba(99,152,187,.12); color: var(--steel); }
+.nav-item.active { background: rgba(99,152,187,.15); color: var(--steel); font-weight: 700; }
+
+.btn-logout { color: #E07070; }
+.btn-logout:hover { background: rgba(224,112,112,.1); }
+
+.main-content { background: var(--bg); }
+
+.badge-admin  { background: rgba(99,152,187,.2); color: var(--steel); }
+.badge-usuario { background: rgba(156,163,175,.15); color: #9CA3AF; }
+
+/* Inputs en oscuro */
+.select-input { background: var(--card-bg); color: var(--text); border-color: var(--border-color); }

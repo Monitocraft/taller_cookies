@@ -1,0 +1,17 @@
+version: '1'
+app:
+  name: taller_cookies
+  description: PHP + MySQL application with Docker Compose
+  type: docker-compose
+  compose:
+    file: ./docker-compose.yml
+  env:
+    - DB_HOST=db
+    - DB_NAME=taller_cookies
+    - DB_USER=taller_user
+    - DB_PASS=Secret123!
+    - MYSQL_ROOT_PASSWORD=ChangeMe123!
+    - MYSQL_DATABASE=taller_cookies
+    - MYSQL_USER=taller_user
+    - MYSQL_PASSWORD=Secret123!
+    - APP_PORT=8000
